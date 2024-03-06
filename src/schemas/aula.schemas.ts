@@ -12,5 +12,13 @@ export const AulaSchema= new Schema({
     type:{
         type:String,
         require:true
+    },
+    pending_tasks:{
+        type:Number,
+        require:true
+    },
+    complete_tasks:{
+        type:Boolean,
+        require:true
     }
 })
