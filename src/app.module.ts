@@ -3,10 +3,11 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { MongooseModule } from '@nestjs/mongoose';
-import { UsersModule } from './users/users.module';
+import { AulaModule } from './aula/aula.module';
+
 
 @Module({
-  imports: [AuthModule,MongooseModule.forRoot('mongodb+srv://toni:123Camila.web@web.mlxviwm.mongodb.net/?retryWrites=true&w=majority'), UsersModule],
+  imports: [AuthModule,MongooseModule.forRoot('mongodb+srv://toni:123Camila.web@web.mlxviwm.mongodb.net/?retryWrites=true&w=majority'), AulaModule],
   controllers: [AppController],
   providers: [AppService],
 })
